@@ -1,0 +1,17 @@
+.Brands{
+    padding: 10 50px;
+}
+.Brands img{
+  width: 600px;
+  height: 450px;
+  filter: opacity(75%);
+}
+.Brands img:hover{
+  filter: none;
+}
+.Brands1 h1{
+  color: #44bd32;
+  font-size: 90px;
+  text-shadow: 0 7px 10px rgba(0, 0, 0, 1.25);
+  font-stretch: ultra-condensed;
+}

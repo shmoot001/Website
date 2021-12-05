@@ -1,0 +1,19 @@
+
+/**
+var products =
+{
+  "title":["Stone Island Garment Dyied Hoodie Black"],
+  "img":["5784322_ff243572-b0e1-404d-ac0c-6 jo.l,ö-lac26ec004db_495_495.png"],
+  "content": {
+    "sizes":[["XS", "S", "M", "L"]],
+    "color":["4"]
+  }
+};
+
+var containerp = document.getElementsByClassName("containerp")[0];
+
+for(var i = 0; i < products.title.length; i++) {
+    var productHtmlTemplate = '<div class="produkt' + (i+1) + '"><div class="card" id="cardcolor"><div class="imgBx"><img src="' + products.title[i] + '"></div><div class="contentBx"><h2>' + products.title[i] + '</h2><div class="size"><h3>Size</h3>' + for(var j = 0; j < products.content.sizes[i].length; j++) { + '<span>' + products.content.sizes[i][j] + '</span>' + } + '</div><div class="color"><h3>Color</h3>' + for(var j = 0; j < products.content.sizes[i].length; j++) {' + <span></span> + '} + '</div><a herf="#">Buy NOW</a></div></div></div>';
+  containerp.innerHTML = containerp.innerHTML + productHtmlTemplate;
+}
+**/

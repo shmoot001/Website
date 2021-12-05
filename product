@@ -1,0 +1,269 @@
+html {
+<div class="containerp">
+  <div class="produkt1">
+    <div class="card" id="cardcolor">
+      <div class="imgBx">
+        <img src="5784322_ff243572-b0e1-404d-ac0c-6ac26ec004db_495_495.png">
+      </div>
+      <div class="contentBx">
+        <h2>Stone Island Garment Dyied Hoodie Black</h2>
+        <div class="size">
+          <h3>Size</h3>
+          <span>XS</span>
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+        </div>
+        <div class="color">
+          <h3>Color</h3>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a herf="#">Buy NOW</a>
+      </div>
+    </div>
+  </div>
+}
+css{
+.containerp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.containerp .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.containerp .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9bdc28;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.containerp .produkt1 .card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #718093;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.containerp .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.containerp .produkt1 .card:after {
+  content: 'Stone Island';
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 2.9em;
+  font-weight: 800;
+  font-style: italic;
+  color: aliceblue;
+  color: rga(255, 255, 255, 0.04);
+}
+.containerp .card:after {
+  content: 'offwhite';
+  position: absolute;
+  top: 1%;
+  left: -5%;
+  font-size: 5em;
+  font-weight: 800;
+  font-style: italic;
+  color: aliceblue;
+  color: rbga(255, 255, 255, 0.04);
+}
+
+.containerp .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.containerp .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.containerp .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.containerp .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  color: aliceblue;
+  z-index: 10;
+}
+
+.containerp .card:hover .contentBx {
+  height: 210px;
+}
+
+.containerp .card .coontentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.containerp .card .contentBx .size,
+.containerp .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.containerp .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.containerp .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.containerp .card .contentBx .size h3,
+.containerp .card .contentBx .color h3 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.containerp .card .contentBx .size span {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover {
+  background: #9bdc28;
+}
+
+.containerp .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.containerp .card .contentBx .size span:nth-child(2) {
+  background: #9bdc28;
+}
+
+.containerp .card .contentBx .size span:nth-child(3) {
+  background: #03a9f4;
+}
+
+.containerp .card .contentBx .size span:nth-child(4) {
+  background: #e91e63;
+}
+
+.containerp .card .contentBx .size span:nth-child(5) {
+  background: #e67e22;
+}
+
+.containerp .card .contentBx .color span:nth-child(2) {
+  background: #9bdc28;
+}
+
+.containerp .card .contentBx .color span:nth-child(3) {
+  background: #03a9f4;
+}
+
+.containerp .card .contentBx .color span:nth-child(4) {
+  background: #e91e63;
+}
+
+.containerp .card .contentBx .color span:nth-child(5) {
+  background: #e67e22;
+}
+
+.containerp .produkt4 .card .contentBx .color span:nth-child(2) {
+  background: #111;
+}
+
+.containerp .produkt4 .card .contentBx .color span:nth-child(3) {
+  background: #fff;
+}
+
+.containerp .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  background-color: #9c88ff;
+}
+
+.containerp .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+}
+
+.card {
+  background-color: #131313;
+}
+}
